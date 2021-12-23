@@ -1,0 +1,28 @@
+div {
+  /* border: 1px solid black; */
+}
+
+table {
+  text-align: left;
+  border: 1px solid black;
+}
+
+table th {
+  border: 1px solid black;
+}
+.content-header_view {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-header_view_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-header_view_left_text {
+  margin-left: 30px;
+  padding-right: 30px;
+}
