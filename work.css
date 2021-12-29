@@ -5,11 +5,14 @@ div {
 table {
   text-align: left;
   border: 1px solid black;
+  width: 100%;
 }
 
 table th {
   border: 1px solid black;
+  width: 10%;
 }
+
 .content-header_view {
   display: flex;
   justify-content: space-evenly;
@@ -25,4 +28,18 @@ table th {
 .content-header_view_left_text {
   margin-left: 30px;
   padding-right: 30px;
+}
+
+.post-menu {
+  display: flex;
+}
+
+.post-menu li {
+  margin-left: 30px;
+  list-style: none;
+}
+
+.post-menu li a {
+  text-decoration: none;
+  color: #000;
 }

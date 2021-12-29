@@ -1,0 +1,11 @@
+.container i:hover {
+  transition: 0.5s;
+  color: tomato;
+  cursor: pointer;
+}
+
+.container i:active {
+  transition: 0.5s;
+  color: teal;
+  cursor: pointer;
+}

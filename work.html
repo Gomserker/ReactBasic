@@ -18,8 +18,19 @@
           </div>
         </div>
         <div class="content-header_view_right">
-          <span>test view count 0</span><br />
-          <span>test confirm time 2021.12.23 11:31:23</span>
+          <div class="content-header_view_right_1st">
+            <ul class="post-menu">
+              <li>
+                <a href="#" id="like">찜하기 카운터:0</a>
+              </li>
+              <li><a href="#">수정하기</a></li>
+              <li><a href="#">삭제하기</a></li>
+            </ul>
+          </div>
+          <div class="content-header_view_right_2nd">
+            <span>test view count 0</span><br />
+            <span>test confirm time 2021.12.23 11:31:23</span>
+          </div>
         </div>
       </div>
     </div>
@@ -52,5 +63,23 @@
         <span>test text</span>
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/69688adaa8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let counter = 0;
+      let countArray = [];
+
+      const pressLike = document.getElementById("like");
+      const text = document.querySelector("#like");
+
+      function handleClick() {
+        counter = counter + 1;
+        text.innerText = `받은 좋아요 : ` + counter;
+      }
+
+      pressLike.addEventListener("click", handleClick);
+    </script>
   </body>
 </html>
